@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            text-align: left;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-text {
+            transition: transform 0.3s;
+            margin-left: 20px; /* Add some left margin */
+        }
+
+        .footer-text:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <span class="footer-text">Developed by Abhay Pratap Singh</span>
+    </div>
+
+    <script>
+        const footerText = document.querySelector('.footer-text');
+
+        footerText.addEventListener('mouseenter', () => {
+            footerText.textContent = 'Developed by Abhay Pratap Singh - 6376351281';
+        });
+
+        footerText.addEventListener('mouseleave', () => {
+            footerText.textContent = 'Developed by Abhay Pratap Singh';
+        });
+    </script>
+</body>
+</html>
